@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="boxContainer">
+            <h1>Driving License Renewal</h1>
+            <div class="box">
+                <div class="progressBar">
+                    <span class='meter1'></span>
+                    <span class='meter'></span>
+                </div>
+                <div class="heading">
+                    <h1>Let's get started!</h1>
+                    <p>Add your details (As per your registered records)</p>
+                </div>
+                <form>
+                    <div id="abc"  class="formContainer">
+                        <div class="input">
+                            <div class="input1-head"><h1 style="color: black;">Name</h1></div>
+                            <div class="input1-input"><input class="track" type="text" placeholder="Enter Name"></div>
+                        </div>
+                        <div class="input">
+                            <div class="input1-head"><h1 style="color: black;">Nature of Driving License</h1></div>
+                            <div class="input2-radio">
+                                <div class="input2-radioBtn">
+                                    <input class="track" type="radio" name="natureOfDriving" value="private">
+                                    <label for="private">Private</label>
+                                </div>
+                                <div class="input2-radioBtn">
+                                    <input class="track" type="radio" name="natureOfDriving" value="commercial">
+                                    <label for="commercial">Commercial</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="input1-head"><h1 style="color: black;">Type of Previous Driving License</h1></div>
+                            <div class="input2-radio">
+                                <div class="input2-radioBtn">
+                                    <input class="track" type="radio" name="TypeOfDriving" value="paper">
+                                    <label for="paper">Paper Driving License</label>
+                                </div>
+                                <div class="input2-radioBtn">
+                                    <input class="track" type="radio" name="TypeOfDriving" value="smart">
+                                    <label for="smart">Smart Driving License</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="abc"  class="formContainer2">
+                        <div class="input">
+                            <div class="input1-head"><h1 style="color: black;">Place where Driving License was issued</h1></div>
+                            <div class="input1-input"><input class="track" type="text" placeholder="Enter Place Name"></div>
+                        </div>
+                        <div class="input">
+                            <div class="input1-head"><h1 style="color: black;">Issued Year of License</h1></div>
+                            <div class="input3-dropdown">
+                                <div class="input-dropdown">
+                                    <select name="year1" class="track" id="dropdown">
+                                        <option value="0" selected disabled hidden>Choose Issued year of License</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="input1-head"><h1 style="color: black;">Type of Previous Driving License</h1></div>
+                            <div class="input3-dropdown">
+                                <div class="input-dropdown">
+                                    <select name="year2" class="track" id="dropdown">
+                                        <option value="0" selected disabled hidden>Choose Expiry year of license</option>
+                                        <div id="dropdown-container">
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                        </div>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button"><button  id="changeBtn" > Next ></button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
